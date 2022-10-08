@@ -1,0 +1,9 @@
+# Error: The 'VPN Service' payload could not be installed. The VPN service could not be created.
+
+# Fix
+# Removing the DNS entry made it work in my case:
+<key>DNS</key>
+<dict>
+    <key>SupplementalMatchDomainsNoSearch</key>
+    <integer>0</integer>
+</dict>
